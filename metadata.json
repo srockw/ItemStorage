@@ -1,0 +1,7 @@
+{
+  "name": "ItemStorage",
+  "creator": "Srock",
+  "entry": "index.js",
+  "version": "0.0.1",
+  "requires": ["ChestMenu"]
+}
