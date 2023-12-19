@@ -57,7 +57,7 @@ export function storeItem(item) {
 export function scanForItems() {
   Player.getInventory()
     ?.getItems()
-    ?.concat(Player.getPlayer().getArmorItems())
+    ?.concat(Player.getPlayer()?.getArmorItems())
     ?.forEach((item) => storeItem(item));
 
   World.getAllEntities()?.forEach((it) => {
