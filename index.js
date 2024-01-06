@@ -95,7 +95,10 @@ Commands.registerCommand("itemstorage", () => {
   literal("clear", () => {
     argument("confirmation", clearArgumentType, () => {
       exec(() => {
-        new TextComponent("Cleared ALL the items.").setColor(0xff000f).chat();
+        new TextComponent({
+          text: "Cleared ALL the items.",
+          color: 0xff000f
+        }).chat();
         Storage.items.clear();
       });
     });
